@@ -3,29 +3,29 @@ name: Run PHPUnit Tests
 on:
   push:
     branches:
-      - master  # Или master, если у вас другая основная ветка
+      - master # Или master, если у вас другая основная ветка
   pull_request:
     branches:
-      - master  # Или master
+      - master # Или master
 
 jobs:
   test:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v3
+      - name: Checkout code
+        uses: actions/checkout@v3
 
-    - name: Setup PHP
-      uses: shivammathur/setup-php@v2
-      with:
-        php-version: '8.1'  # Укажите вашу версию PHP
-        extensions: mbstring, intl, dom, curl, json, openssl, pdo_mysql, zip
-        # При необходимости раскомментируйте и добавьте другие расширения
-        # coverage: xdebug  # Если нужно использовать xdebug для coverage
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: "8.2" # Укажите вашу версию PHP
+          extensions: mbstring, intl, dom, curl, json, openssl, pdo_mysql, zip
+          # При необходимости раскомментируйте и добавьте другие расширения
+          # coverage: xdebug  # Если нужно использовать xdebug для coverage
 
-    - name: Install Composer dependencies
-      run: composer install --no-progress
+      - name: Install Composer dependencies
+        run: composer install --no-progress
 
-    - name: Run PHPUnit tests
-      run: vendor/bin/phpunit # Убедитесь, что путь к phpunit верный
+      - name: Run PHPUnit tests
+        run: vendor/bin/phpunit # Убедитесь, что путь к phpunit верный
