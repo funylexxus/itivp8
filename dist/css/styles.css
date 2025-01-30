@@ -1,0 +1,174 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "CyberpunkFont";
+  src: url("../fonts/Cyberpunk.ttf") format("truetype");
+}
+body {
+  font-family: "CyberpunkFont", sans-serif;
+  background-color: #000;
+  color: #66ffcc;
+  text-shadow: 0 0 5px #66ffcc;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #1a1a27;
+  box-shadow: 0 0 10px #66ffcc;
+  border-radius: 10px;
+}
+
+h1 {
+  font-family: "CyberpunkFont", cursive;
+  text-align: center;
+  color: #66ffcc;
+  text-shadow: 0 0 8px #66ffcc;
+  margin-bottom: 20px;
+  font-size: 3em;
+  letter-spacing: 2px;
+  animation: glitch 2s linear infinite;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #66ffcc;
+  text-shadow: 0 0 3px #66ffcc;
+}
+
+input[type=date],
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #66ffcc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: #000;
+  color: #66ffcc;
+  font-family: "CyberpunkFont", sans-serif;
+}
+input[type=date]:hover, input[type=date]:focus,
+select:hover,
+select:focus {
+  box-shadow: 0 0 8px #66ffcc;
+  outline: none;
+}
+
+input[type=date]::-webkit-calendar-picker-indicator {
+  filter: invert(85%) hue-rotate(95deg) brightness(180%);
+}
+
+button {
+  background-color: transparent;
+  color: #66ffcc;
+  padding: 12px 20px;
+  border: 2px solid #66ffcc;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: "CyberpunkFont", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.2s ease;
+}
+button:hover {
+  background-color: #66ffcc;
+  color: #000;
+  box-shadow: 0 0 15px #66ffcc;
+}
+
+#results {
+  margin-top: 20px;
+}
+
+.room {
+  border: 1px solid #66ffcc;
+  padding: 10px;
+  margin-bottom: 10px;
+  position: relative;
+  overflow: hidden;
+}
+.room::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #66ffcc;
+  opacity: 0.1;
+  z-index: -1;
+  pointer-events: none;
+}
+.room h3 {
+  color: #66ffcc;
+  text-shadow: 0 0 5px #66ffcc;
+  margin-top: 0;
+  animation: glitch 2s linear infinite;
+}
+
+.book-button {
+  background-color: #000;
+  color: #66ffcc;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: "CyberpunkFont", sans-serif;
+}
+.book-button:hover {
+  background-color: #66ffcc;
+  color: #000;
+  box-shadow: 0 0 12px #66ffcc;
+}
+
+/* Глитч-эффект */
+@keyframes glitch {
+  0% {
+    text-shadow: 0.05em 0 0 rgba(0, 255, 0, 0.75), -0.025em -0.05em 0 rgba(0, 255, 0, 0.75), 0.025em 0.05em 0 rgba(0, 255, 0, 0.75);
+  }
+  14% {
+    text-shadow: 0.05em 0 0 rgba(0, 255, 0, 0.75), -0.025em -0.05em 0 rgba(0, 255, 0, 0.75), 0.025em 0.05em 0 rgba(0, 255, 0, 0.75);
+  }
+  15% {
+    text-shadow: -0.05em -0.025em 0 rgba(0, 255, 0, 0.75), 0.025em 0.025em 0 rgba(0, 255, 0, 0.75), -0.05em -0.05em 0 rgba(0, 255, 0, 0.75);
+  }
+  49% {
+    text-shadow: -0.05em -0.025em 0 rgba(0, 255, 0, 0.75), 0.025em 0.025em 0 rgba(0, 255, 0, 0.75), -0.05em -0.05em 0 rgba(0, 255, 0, 0.75);
+  }
+  50% {
+    text-shadow: 0.025em 0.05em 0 rgba(0, 255, 0, 0.75), 0.05em 0 0 rgba(0, 255, 0, 0.75), 0 -0.05em 0 rgba(0, 255, 0, 0.75);
+  }
+  99% {
+    text-shadow: 0.025em 0.05em 0 rgba(0, 255, 0, 0.75), 0.05em 0 0 rgba(0, 255, 0, 0.75), 0 -0.05em 0 rgba(0, 255, 0, 0.75);
+  }
+  100% {
+    text-shadow: -0.025em 0 0 rgba(0, 255, 0, 0.75), -0.025em -0.025em 0 rgba(0, 255, 0, 0.75), -0.025em -0.05em 0 rgba(0, 255, 0, 0.75);
+  }
+}
+.error-message {
+  background-color: #0d0d13;
+  border: 1px solid #ff00cc;
+  color: #ff00cc;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  text-shadow: 0 0 5px #ff00cc;
+  animation: glitch 2s linear infinite;
+}
+
+.success-message {
+  background-color: #0d0d13;
+  border: 1px solid #66ffcc;
+  color: #66ffcc;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  text-shadow: 0 0 5px #66ffcc;
+  animation: glitch 2s linear infinite;
+}

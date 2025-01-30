@@ -1,0 +1,583 @@
+=== Начало запроса ===
+$_REQUEST: Array
+(
+)
+
+$_POST: Array
+(
+)
+
+=== Начало запроса ===
+$_REQUEST: Array
+(
+)
+
+$_POST: Array
+(
+    [action] => getRooms
+    [hotel] => 1
+    [checkin] => 2024-01-01
+    [checkout] => 2024-01-10
+)
+
+=== Начало запроса ===
+$_REQUEST: Array
+(
+)
+
+$_POST: Array
+(
+    [action] => getRooms
+    [hotel] => invalid
+    [checkin] => 2023-12-20
+    [checkout] => 2023-12-25
+)
+
+=== Начало запроса ===
+$_REQUEST: Array
+(
+)
+
+$_POST: Array
+(
+    [action] => getRooms
+    [hotel] => 1
+    [checkin] => invalid-date
+    [checkout] => 2023-12-25
+)
+
+=== Начало запроса ===
+$_REQUEST: Array
+(
+)
+
+$_POST: Array
+(
+    [action] => getRooms
+    [hotel] => 1
+    [checkin] => invalid-date
+    [checkout] => 2023-12-25
+)
+
+=== Начало запроса ===
+$_REQUEST: Array
+(
+)
+
+$_POST: Array
+(
+    [action] => invalidAction
+    [hotel] => 1
+    [checkin] => invalid-date
+    [checkout] => 2023-12-25
+)
+
+=== Начало запроса ===
+$_REQUEST: Array
+(
+)
+
+$_POST: Array
+(
+    [action] => getRooms
+    [hotel] => invalid
+    [checkin] => 2023-07-01
+    [checkout] => 2023-07-15
+)
+
+=== Начало запроса ===
+$_REQUEST: Array
+(
+)
+
+$_POST: Array
+(
+)
+
+=== Начало запроса ===
+$_REQUEST: Array
+(
+)
+
+$_POST: Array
+(
+    [action] => getRooms
+    [hotel] => 1
+    [checkin] => 2024-01-01
+    [checkout] => 2024-01-10
+)
+
+=== Начало запроса ===
+$_REQUEST: Array
+(
+)
+
+$_POST: Array
+(
+    [action] => getRooms
+    [hotel] => invalid
+    [checkin] => 2023-12-20
+    [checkout] => 2023-12-25
+)
+
+=== Начало запроса ===
+$_REQUEST: Array
+(
+)
+
+$_POST: Array
+(
+    [action] => getRooms
+    [hotel] => 1
+    [checkin] => invalid-date
+    [checkout] => 2023-12-25
+)
+
+=== Начало запроса ===
+$_REQUEST: Array
+(
+)
+
+$_POST: Array
+(
+    [action] => getRooms
+    [hotel] => 1
+    [checkin] => invalid-date
+    [checkout] => 2023-12-25
+)
+
+=== Начало запроса ===
+$_REQUEST: Array
+(
+)
+
+$_POST: Array
+(
+    [action] => invalidAction
+    [hotel] => 1
+    [checkin] => invalid-date
+    [checkout] => 2023-12-25
+)
+
+=== Начало запроса ===
+$_REQUEST: Array
+(
+)
+
+$_POST: Array
+(
+    [action] => getRooms
+    [hotel] => invalid
+    [checkin] => 2023-07-01
+    [checkout] => 2023-07-15
+)
+
+=== Начало запроса ===
+$_REQUEST: Array
+(
+)
+
+$_POST: Array
+(
+)
+
+=== Начало запроса ===
+$_REQUEST: Array
+(
+)
+
+$_POST: Array
+(
+    [action] => getRooms
+    [hotel] => 1
+    [checkin] => 2024-01-01
+    [checkout] => 2024-01-10
+)
+
+=== Начало запроса ===
+$_REQUEST: Array
+(
+)
+
+$_POST: Array
+(
+    [action] => getRooms
+    [hotel] => invalid
+    [checkin] => 2023-12-20
+    [checkout] => 2023-12-25
+)
+
+=== Начало запроса ===
+$_REQUEST: Array
+(
+)
+
+$_POST: Array
+(
+    [action] => getRooms
+    [hotel] => 1
+    [checkin] => invalid-date
+    [checkout] => 2023-12-25
+)
+
+=== Начало запроса ===
+$_REQUEST: Array
+(
+)
+
+$_POST: Array
+(
+    [action] => getRooms
+    [hotel] => 1
+    [checkin] => invalid-date
+    [checkout] => 2023-12-25
+)
+
+=== Начало запроса ===
+$_REQUEST: Array
+(
+)
+
+$_POST: Array
+(
+    [action] => invalidAction
+    [hotel] => 1
+    [checkin] => invalid-date
+    [checkout] => 2023-12-25
+)
+
+=== Начало запроса ===
+$_REQUEST: Array
+(
+)
+
+$_POST: Array
+(
+    [action] => getRooms
+    [hotel] => invalid
+    [checkin] => 2023-07-01
+    [checkout] => 2023-07-15
+)
+
+=== Начало запроса ===
+$_REQUEST: Array
+(
+)
+
+$_POST: Array
+(
+)
+
+=== Начало запроса ===
+$_REQUEST: Array
+(
+)
+
+$_POST: Array
+(
+    [action] => getRooms
+    [hotel] => 1
+    [checkin] => 2024-01-01
+    [checkout] => 2024-01-10
+)
+
+=== Начало запроса ===
+$_REQUEST: Array
+(
+)
+
+$_POST: Array
+(
+    [action] => getRooms
+    [hotel] => invalid
+    [checkin] => 2023-12-20
+    [checkout] => 2023-12-25
+)
+
+=== Начало запроса ===
+$_REQUEST: Array
+(
+)
+
+$_POST: Array
+(
+    [action] => getRooms
+    [hotel] => 1
+    [checkin] => invalid-date
+    [checkout] => 2023-12-25
+)
+
+=== Начало запроса ===
+$_REQUEST: Array
+(
+)
+
+$_POST: Array
+(
+    [action] => getRooms
+    [hotel] => 1
+    [checkin] => invalid-date
+    [checkout] => 2023-12-25
+)
+
+=== Начало запроса ===
+$_REQUEST: Array
+(
+)
+
+$_POST: Array
+(
+    [action] => invalidAction
+    [hotel] => 1
+    [checkin] => invalid-date
+    [checkout] => 2023-12-25
+)
+
+=== Начало запроса ===
+$_REQUEST: Array
+(
+)
+
+$_POST: Array
+(
+    [action] => getRooms
+    [hotel] => invalid
+    [checkin] => 2023-07-01
+    [checkout] => 2023-07-15
+)
+
+=== Начало запроса ===
+$_REQUEST: Array
+(
+)
+
+$_POST: Array
+(
+)
+
+=== Начало запроса ===
+$_REQUEST: Array
+(
+)
+
+$_POST: Array
+(
+    [action] => getRooms
+    [hotel] => 1
+    [checkin] => 2024-01-01
+    [checkout] => 2024-01-10
+)
+
+=== Начало запроса ===
+$_REQUEST: Array
+(
+)
+
+$_POST: Array
+(
+    [action] => getRooms
+    [hotel] => invalid
+    [checkin] => 2023-12-20
+    [checkout] => 2023-12-25
+)
+
+=== Начало запроса ===
+$_REQUEST: Array
+(
+)
+
+$_POST: Array
+(
+    [action] => getRooms
+    [hotel] => 1
+    [checkin] => invalid-date
+    [checkout] => 2023-12-25
+)
+
+=== Начало запроса ===
+$_REQUEST: Array
+(
+)
+
+$_POST: Array
+(
+    [action] => getRooms
+    [hotel] => 1
+    [checkin] => invalid-date
+    [checkout] => 2023-12-25
+)
+
+=== Начало запроса ===
+$_REQUEST: Array
+(
+)
+
+$_POST: Array
+(
+    [action] => invalidAction
+    [hotel] => 1
+    [checkin] => invalid-date
+    [checkout] => 2023-12-25
+)
+
+=== Начало запроса ===
+$_REQUEST: Array
+(
+)
+
+$_POST: Array
+(
+    [action] => getRooms
+    [hotel] => invalid
+    [checkin] => 2023-07-01
+    [checkout] => 2023-07-15
+)
+
+=== Начало запроса ===
+$_REQUEST: Array
+(
+)
+
+$_POST: Array
+(
+)
+
+=== Начало запроса ===
+$_REQUEST: Array
+(
+)
+
+$_POST: Array
+(
+    [action] => getRooms
+    [hotel] => 1
+    [checkin] => 2024-01-01
+    [checkout] => 2024-01-10
+)
+
+=== Начало запроса ===
+$_REQUEST: Array
+(
+)
+
+$_POST: Array
+(
+    [action] => getRooms
+    [hotel] => invalid
+    [checkin] => 2023-12-20
+    [checkout] => 2023-12-25
+)
+
+=== Начало запроса ===
+$_REQUEST: Array
+(
+)
+
+$_POST: Array
+(
+    [action] => getRooms
+    [hotel] => 1
+    [checkin] => invalid-date
+    [checkout] => 2023-12-25
+)
+
+=== Начало запроса ===
+$_REQUEST: Array
+(
+)
+
+$_POST: Array
+(
+    [action] => invalidAction
+    [hotel] => 1
+    [checkin] => invalid-date
+    [checkout] => 2023-12-25
+)
+
+=== Начало запроса ===
+$_REQUEST: Array
+(
+)
+
+$_POST: Array
+(
+    [action] => getRooms
+    [hotel] => invalid
+    [checkin] => 2023-07-01
+    [checkout] => 2023-07-15
+)
+
+=== Начало запроса ===
+$_REQUEST: Array
+(
+)
+
+$_POST: Array
+(
+)
+
+=== Начало запроса ===
+$_REQUEST: Array
+(
+)
+
+$_POST: Array
+(
+    [action] => getRooms
+    [hotel] => 1
+    [checkin] => 2024-01-01
+    [checkout] => 2024-01-10
+)
+
+=== Начало запроса ===
+$_REQUEST: Array
+(
+)
+
+$_POST: Array
+(
+    [action] => getRooms
+    [hotel] => invalid
+    [checkin] => 2023-12-20
+    [checkout] => 2023-12-25
+)
+
+=== Начало запроса ===
+$_REQUEST: Array
+(
+)
+
+$_POST: Array
+(
+    [action] => getRooms
+    [hotel] => 1
+    [checkin] => invalid-date
+    [checkout] => 2023-12-25
+)
+
+=== Начало запроса ===
+$_REQUEST: Array
+(
+)
+
+$_POST: Array
+(
+    [action] => invalidAction
+    [hotel] => 1
+    [checkin] => invalid-date
+    [checkout] => 2023-12-25
+)
+
+=== Начало запроса ===
+$_REQUEST: Array
+(
+)
+
+$_POST: Array
+(
+    [action] => getRooms
+    [hotel] => invalid
+    [checkin] => 2023-07-01
+    [checkout] => 2023-07-15
+)
+

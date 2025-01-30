@@ -1,0 +1,209 @@
+$cyberpunk-font: "CyberpunkFont";
+$primary-color: #66ffcc;
+$secondary-color: #000;
+$shadow-color: #66ffcc;
+$container-bg-color: #1a1a27;
+$error-border-color: #ff00cc;
+$error-text-color: #ff00cc;
+
+@font-face {
+  font-family: $cyberpunk-font;
+  src: url("../fonts/Cyberpunk.ttf") format("truetype");
+}
+
+@mixin text-shadow($color, $size) {
+  text-shadow: 0 0 $size $color;
+}
+
+@mixin box-shadow($color, $size) {
+  box-shadow: 0 0 $size $color;
+}
+
+@mixin button-hover($bg-color, $text-color, $shadow-color, $shadow-size) {
+  &:hover {
+    background-color: $bg-color;
+    color: $text-color;
+    @include box-shadow($shadow-color, $shadow-size);
+  }
+}
+
+@mixin glitch-animation {
+  animation: glitch 2s linear infinite;
+}
+
+body {
+  font-family: $cyberpunk-font, sans-serif;
+  background-color: $secondary-color;
+  color: $primary-color;
+  @include text-shadow($primary-color, 5px);
+  overflow-x: hidden;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: $container-bg-color;
+  @include box-shadow($primary-color, 10px);
+  border-radius: 10px;
+}
+
+h1 {
+  font-family: $cyberpunk-font, cursive;
+  text-align: center;
+  color: $primary-color;
+  @include text-shadow($primary-color, 8px);
+  margin-bottom: 20px;
+  font-size: 3em;
+  letter-spacing: 2px;
+  @include glitch-animation;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: $primary-color;
+  @include text-shadow($primary-color, 3px);
+}
+
+input[type="date"],
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid $primary-color;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: $secondary-color;
+  color: $primary-color;
+  font-family: $cyberpunk-font, sans-serif;
+
+  &:hover,
+  &:focus {
+    @include box-shadow($primary-color, 8px);
+    outline: none;
+  }
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(85%) hue-rotate(95deg) brightness(180%);
+}
+
+button {
+  background-color: transparent;
+  color: $primary-color;
+  padding: 12px 20px;
+  border: 2px solid $primary-color;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: $cyberpunk-font, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.2s ease;
+  @include button-hover($primary-color, $secondary-color, $primary-color, 15px);
+}
+
+#results {
+  margin-top: 20px;
+}
+
+.room {
+  border: 1px solid $primary-color;
+  padding: 10px;
+  margin-bottom: 10px;
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $primary-color;
+    opacity: 0.1;
+    z-index: -1;
+    pointer-events: none;
+  }
+
+  h3 {
+    color: $primary-color;
+    @include text-shadow($primary-color, 5px);
+    margin-top: 0;
+    @include glitch-animation;
+  }
+}
+
+.book-button {
+  background-color: $secondary-color;
+  color: $primary-color;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: $cyberpunk-font, sans-serif;
+  @include button-hover($primary-color, $secondary-color, $primary-color, 12px);
+}
+
+/* Глитч-эффект */
+@keyframes glitch {
+  0% {
+    text-shadow: 0.05em 0 0 rgba(0, 255, 0, 0.75),
+      -0.025em -0.05em 0 rgba(0, 255, 0, 0.75),
+      0.025em 0.05em 0 rgba(0, 255, 0, 0.75);
+  }
+  14% {
+    text-shadow: 0.05em 0 0 rgba(0, 255, 0, 0.75),
+      -0.025em -0.05em 0 rgba(0, 255, 0, 0.75),
+      0.025em 0.05em 0 rgba(0, 255, 0, 0.75);
+  }
+  15% {
+    text-shadow: -0.05em -0.025em 0 rgba(0, 255, 0, 0.75),
+      0.025em 0.025em 0 rgba(0, 255, 0, 0.75),
+      -0.05em -0.05em 0 rgba(0, 255, 0, 0.75);
+  }
+  49% {
+    text-shadow: -0.05em -0.025em 0 rgba(0, 255, 0, 0.75),
+      0.025em 0.025em 0 rgba(0, 255, 0, 0.75),
+      -0.05em -0.05em 0 rgba(0, 255, 0, 0.75);
+  }
+  50% {
+    text-shadow: 0.025em 0.05em 0 rgba(0, 255, 0, 0.75),
+      0.05em 0 0 rgba(0, 255, 0, 0.75), 0 -0.05em 0 rgba(0, 255, 0, 0.75);
+  }
+  99% {
+    text-shadow: 0.025em 0.05em 0 rgba(0, 255, 0, 0.75),
+      0.05em 0 0 rgba(0, 255, 0, 0.75), 0 -0.05em 0 rgba(0, 255, 0, 0.75);
+  }
+  100% {
+    text-shadow: -0.025em 0 0 rgba(0, 255, 0, 0.75),
+      -0.025em -0.025em 0 rgba(0, 255, 0, 0.75),
+      -0.025em -0.05em 0 rgba(0, 255, 0, 0.75);
+  }
+}
+
+.error-message {
+  background-color: #0d0d13;
+  border: 1px solid $error-border-color;
+  color: $error-text-color;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  @include text-shadow($error-text-color, 5px);
+  @include glitch-animation;
+}
+
+.success-message {
+  background-color: #0d0d13;
+  border: 1px solid $primary-color;
+  color: $primary-color;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  @include text-shadow($primary-color, 5px);
+  @include glitch-animation;
+}
