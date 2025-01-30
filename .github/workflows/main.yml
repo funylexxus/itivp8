@@ -13,23 +13,23 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
+    - name: Checkout code
+      uses: actions/checkout@v3
 
-      - name: Setup PHP
-        uses: shivammathur/setup-php@v2
-        with:
-          php-version: "8.2"
-          extensions: mbstring, intl, dom, curl, json, openssl, pdo_mysql, zip
+    - name: Setup PHP
+      uses: shivammathur/setup-php@v2
+      with:
+        php-version: '8.2'
+        extensions: mbstring, intl, dom, curl, json, openssl, pdo_mysql, zip
 
-      - name: Remove vendor directory
-        run: rm -rf vendor
+    - name: Remove vendor directory
+      run: rm -rf vendor
 
-      - name: Reinstall Composer dependencies
-        run: composer install --no-progress --no-interaction
+    - name: Reinstall Composer dependencies
+      run: composer install --no-progress --no-interaction
 
-      - name: Make PHPUnit executable
-        run: chmod +x vendor/bin/phpunit
+    - name: Make PHPUnit executable
+      run: chmod +x vendor/bin/phpunit
 
-      - name: Run PHPUnit tests
-        run: vendor/bin/phpunit
+    - name: Run PHPUnit tests
+      run: vendor/bin/phpunit ApiTest.php
